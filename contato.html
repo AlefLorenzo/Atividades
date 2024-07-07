@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações para Contato</title>
+    <style>
+        /* Reset CSS básico */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos do bloco de contato */
+        .contact-info {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-info .methods {
+            margin-top: 20px;
+        }
+
+        .method {
+            margin-bottom: 15px;
+        }
+
+        .method h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .method p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .method a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .method a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos do formulário */
+        form {
+            margin-top: 30px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="text"], form input[type="email"], form textarea, form select, form input[type="checkbox"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos do botão voltar */
+        .back-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-button a {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Informações para Contato</h1>
+        </header>
+        
+        <div class="contact-info">
+            <h2>Entre em Contato</h2>
+            <p>Estou disponível para novos projetos e oportunidades. Sinta-se à vontade para entrar em contato através dos seguintes meios:</p>
+
+            <div class="methods">
+                <div class="method">
+                    <h3>Email</h3>
+                    <p>Para informações gerais e propostas de projetos, envie um email para: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+                </div>
+
+                <div class="method">
+                    <h3>Telefone</h3>
+                    <p>Para contato telefônico, ligue para: (00) 12345-6789</p>
+                </div>
+
+                <div class="method">
+                    <h3>Redes Sociais</h3>
+                    <p>Conecte-se através das minhas redes sociais:</p>
+                    <ul>
+                        <li><a href="https://linkedin.com/seuperfil" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/seuusuario" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/seuperfil" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Estou ansioso para ouvir sobre suas ideias e projetos. Utilize o formulário abaixo para enviar uma mensagem direta:</p>
+
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <label for="tipo_contratacao">Tipo de Contratação:</label>
+                <select id="tipo_contratacao" name="tipo_contratacao">
+                    <option value="pessoa_fisica">Pessoa Física</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+
+                <label for="recrutador">Você é um recrutador?</label>
+                <input type="checkbox" id="recrutador" name="recrutador">
+
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+
+            <div class="back-button">
+                <a href="javascript:history.back()" class="back-link">Voltar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

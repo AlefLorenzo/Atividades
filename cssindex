@@ -1,4 +1,4 @@
-/* Reset CSS básico */
+ /* Reset CSS básico */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
